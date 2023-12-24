@@ -48,7 +48,7 @@ function animateBubbles() {
                 top: randomY,
                 opacity: Math.random(),
             },
-            Math.random() * 8000 + 2000, // Tempo de animação entre 1 e 4 segundos
+            Math.random() * 8000 + 2000, // Tempo de animação 
             function () {
                 // Chama a animação novamente
                 animateBubbles();

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Variable declarations
+    // Variáveis
     var height = window.innerHeight,
         x = 0, y = height / 2,
         curveX = 0,
@@ -80,11 +80,11 @@ $(document).ready(function() {
       hamburger.css('transform', 'translate(' + curveX + 'px, ' + curveY + 'px)');
       $('h2').css('transform', 'translateY(' + curveY + 'px)');
   
-      // Continue animation
+      // Animação contínua
       window.requestAnimationFrame(svgCurve);
     }
   
-    // Initial call to start animation
+    // Chamada animação
     window.requestAnimationFrame(svgCurve);
 
 
@@ -93,7 +93,7 @@ function closeModal() {
   $('.modal').removeClass('open');
 }
 
-// Adicione este trecho para fechar o modal quando o botão dentro do modal é clicado
+// Fechar o modal quando o botão dentro do modal é clicado
 $('.close-button').on('click', function () {
   closeModal();
 });
