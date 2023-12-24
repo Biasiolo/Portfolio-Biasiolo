@@ -37,8 +37,8 @@ $(document).ready(function() {
     }
   
     // Constants for animation
-    var hoverZone = 100;
-    var expandAmount = 40;
+    var hoverZone = 150;
+    var expandAmount = 50;
   
     // Function to create SVG curve animation
     function svgCurve() {
