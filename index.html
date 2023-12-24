@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <title>Rafael Biasiolo</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu-inner">
+            <ul>
+                <li><a href="#curriculum-modal" class="open-modal" data-modal-id="curriculum-modal">Sobre</a></li>
+                <li><a href="#skills-modal" class="open-modal" data-modal-id="skills-modal">Skills</a></li>
+                <!-- Adicione links adicionais aqui -->
+                <li><a href="#projeto1-modal" class="open-modal" data-modal-id="projeto1-modal">Projeto Best Karaoke</a>
+                </li>
+                <li><a href="#projeto2-modal" class="open-modal" data-modal-id="projeto2-modal">projeto 2</a></li>
+                <li><a href="#projeto3-modal" class="open-modal" data-modal-id="projeto3-modal">Projeto 3</a></li>
+                <li><a href="#contato-modal" class="open-modal" data-modal-id="contato-modal">Contato</a></li>
+            </ul>
+        </div>
+        <svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+        </svg>
+    </div>
+    <div class="texto-mouse">
+        <h2>Portifólio Rafael Biasiolo</h2>
+    </div>
+
+
+    <div class="div-container"></div>
+
+    <!-- Adicione modais adicionais aqui -->
+    <div id="curriculum-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Conteúdo do modal de Competências -->
+        <img src="img/WhatsApp_Image_2023-11-01_at_10.09.30-removebg-preview (1).png" alt="">
+        <h3>Rafael Biasiolo</h3>
+        <h4>Desenvolvedor Front-End | HTML | CSS | Javascript | Scrum | Design | UX/UI</h4>
+        <!-- Adicione outras informações do currículo aqui -->
+        <p>Tenho habilidades em HTML, CSS, JavaScript, Git, Design, UI/UX, Canva e Figma, e capacidade de criar peças
+            criativas e funcionais. Além disso, minha experiência em marketing digital, certificado pelo Google,
+            aplicado à venda de imóveis e produtos de varejo me proporcionou uma perspectiva única sobre a criação
+            de interfaces atraentes, domínio de metatags e boas práticas.<br><br>
+
+            Conhecimento em Metodologia Ágil, especialmente o modelo Scrum, estou pronto para contribuir em equipes
+            de desenvolvimento de forma eficiente.<br><br>
+
+            Com mais de 15 anos de sólida experiência no mercado imobiliário em São Paulo, adquiri habilidades
+            valiosas em gestão de pessoas, vendas, estratégia de marketing e gestão de processos. Minha jornada
+            profissional me proporcionou uma visão aguçada para identificar padrões, trabalhar com métricas e adotar
+            uma abordagem analítica.<br><br>
+
+            As aptidões em negociação, comunicação, empatia e orientação para resultados são facilmente
+            transferíveis para o desenvolvimento front-end, onde a colaboração e a entrega de projetos de alta
+            qualidade são cruciais. Estou entusiasmado em explorar oportunidades nessa área e aplicar
+            minha experiência em uma nova direção de carreira.</p>
+    </div>
+
+    <div id="skills-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Card com emblemas de hard e soft skills -->
+        <div class="skills-card">
+            
+                <h3>SKILLS</h3>
+                <div class="emblemas">
+                    <div class="emblema-leg">
+                        <img src="./img/html.png" alt="HTML Badge" title="HTML"><span>HTML</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/css-3.png" title="css ícones" alt="CSS Badge" title="CSS"><span>CSS</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/script-java.png" alt="JavaScript Badge" title="JavaScript"><span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="emblemas2">
+                    <div class="emblema-leg">
+                        <img src="./img/github.png" alt="Git Badge" title="HTML"><span>Github</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/design-grafico.png" title="Design ícones" alt="Design Badge" title="Design"><span>Design</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/ux.png" alt="ux-ui Badge" title="Ux-Ui"><span>UX-UI</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/figma.png" alt="Figma Badge" title="Figma"><span>Figma</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/scrum.png" alt="Scrum Badge" title="Scrum"><span>Scrum</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/image-removebg-preview.png" alt="Canva Badge" title="Canva"><span>Canva</span>
+                    </div>
+                    <div class="emblema-leg">
+                        <img src="./img/alvo.png" alt="MKT Badge" title="MKT"><span>Marketing</span>
+                    </div>
+                </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="skills-card">
+            <h4>Soft Skills</h4>
+            <p>Criatividade | Colaboração | Gestão de Pessoas | Resolução de Problemas | Negociação | Comunicação | Orientação para Resultados | Senso Estético</p>
+        </div>
+    </div>
+
+    <div id="projeto1-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Conteúdo do modal do Menu Item 2 -->
+        <img src="img/Screen_best_karaoke.png" alt="">
+        <h3>Best Karaokê</h3>
+        <a href="https://best-karaoke.vercel.app/">Acesse: best-karaoke.vercel.app</a>
+        <p>O "Best Karaoke" é um site que permite aos usuários pesquisar por músicas e artistas, fornecendo resultados
+            de vídeos adaptados para karaoke. Além disso, o site inclui uma seção de artigos sobre técnicas vocais,
+            equipamentos e outros assuntos relacionados a karaoke.</p>
+        <p>Objetivos Principais Facilitar a busca e reprodução de vídeos de karaoke. Oferecer informações úteis através
+            de uma seção de artigos. Proporcionar uma experiência de usuário intuitiva e responsiva. Público-Alvo O
+            público-alvo do Best Karaoke inclui entusiastas de música, amantes de karaoke e pessoas interessadas em
+            aprimorar suas habilidades vocais.
+
+        </p>
+    </div>
+
+    <div id="projeto2-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Conteúdo do modal do Menu Item 3 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non optio assumenda numquam explicabo possimus
+            deserunt ad ipsum placeat corrupti? Unde voluptates non sunt officiis odit! Fugiat dolorem dolorum aliquid.
+
+        </p>
+    </div>
+
+    <div id="projeto3-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Conteúdo do modal do Menu Item 4 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non optio assumenda numquam explicabo possimus
+            deserunt ad ipsum placeat corrupti? Unde voluptates non sunt officiis odit! Fugiat dolorem dolorum aliquid.
+
+        </p>
+    </div>
+
+    <div id="contato-modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <!-- Conteúdo do modal do Sobre -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non optio assumenda numquam explicabo possimus
+            deserunt ad ipsum placeat corrupti? Unde voluptates non sunt officiis odit! Fugiat dolorem dolorum aliquid.
+
+        </p>
+    </div>
+</body>
+
+</html>
